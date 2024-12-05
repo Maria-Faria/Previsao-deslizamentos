@@ -30,11 +30,11 @@ print(f'Treinaremos com {len(treino_x)} elementos')
 print(f'Testaremos com {len(teste_x)} elementos')
 
 modelo = LinearSVC()
-modelo.fit(treino_x, treino_y)
+modelo.fit(treino_x.values, treino_y.values)
 
-previsoes = modelo.predict(teste_x)
+previsoes = modelo.predict(teste_x.values)
 
-acuracia = accuracy_score(teste_y, previsoes) * 100
+acuracia = accuracy_score(teste_y.values, previsoes) * 100
 print(f"A acurácia foi de {acuracia:.2f}%")
 
 # testes caso de estudo -> São Sebastião 2023
@@ -47,6 +47,7 @@ print(f"A acurácia foi de {acuracia:.2f}%")
 # cobertura_vegetal: 1 (fotos do local)
 
 caso_estudo = [100, 683, 30, 2, 0, 1]
+print("\n\n----- Caso São Sebastião 2023 -----")
 print(deslizamento(caso_estudo))
 
 # Testes caso de estudo - Petrópolis 2022
@@ -59,4 +60,5 @@ print(deslizamento(caso_estudo))
 # cobertura_vegetal: 1 - https://www.periodicos.rc.biblioteca.unesp.br/index.php/geociencias/article/view/17210/12759
 
 caso_estudo = [100, 259, 33, 4.5, 1, 1]
+print("\n\n----- Caso Petrópolis 2022 -----")
 print(deslizamento(caso_estudo))
