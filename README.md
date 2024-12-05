@@ -1,5 +1,5 @@
 # Previsão de deslizamentos de terra através da análise de dados utilizando inteligência artificial  
-🚧`em construção`🚧
+`finalizado`✔️
 
 ## Sobre o projeto
 - O projeto consiste no desenvolvimento de um modelo de _machine learning_, cujo objetivo é analisar seis variáveis e, a partir delas, demonstrar se há ou não risco de um deslizamento de terra.
